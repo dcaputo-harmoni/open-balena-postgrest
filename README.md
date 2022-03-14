@@ -1,2 +1,2 @@
-# open-balena-admin-postgrest
+# open-balena-postgrest
 Open Balena Postgrest &amp; Proxy Implementation
