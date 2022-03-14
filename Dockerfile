@@ -26,7 +26,6 @@ RUN npm install --no-fund --no-update-notifier
 
 COPY start.sh ./
 
-ENV PGRST_DB_URI=postgres://docker:docker@db.openbalena.local:5432
 ENV PGRST_DB_SCHEMA=public
 ENV PGRST_DB_ANON_ROLE=anon
 ENV PGRST_SERVER_HOST=127.0.0.1
