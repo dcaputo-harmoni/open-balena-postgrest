@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y curl && \
     curl -sL https://deb.nodesource.com/setup_17.x | bash -
 
 RUN apt-get update && apt-get install -y \
+    libpq5 \
     nodejs \
     node-typescript \
     jq \
