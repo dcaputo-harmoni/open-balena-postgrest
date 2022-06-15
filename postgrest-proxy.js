@@ -17,10 +17,10 @@ app.use('/', createProxyMiddleware({
       const token = jwt.create({role: "docker"}, process.env.PGRST_JWT_SECRET).compact();
       proxyReq.setHeader("Authorization", `Bearer ${token}`);
     } catch (e) {
-      console.log("Token verification failed");
       proxyReq.destroy();
   }
   },
   changeOrigin: true,
 }));
+
 app.listen(8000);
